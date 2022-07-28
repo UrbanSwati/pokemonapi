@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.router import pokemon
+from app.router import pokemon, health
 
 app = FastAPI(
     title="Pokemon API",
@@ -13,4 +13,7 @@ app = FastAPI(
     },
 )
 
-app.include_router(pokemon.router, prefix="/api/v1", tags=["Pokemon"])
+API_V1 = "/api/v1"
+
+app.include_router(health.router, prefix=API_V1, tags=["Pokemon"])
+app.include_router(pokemon.router, prefix=API_V1, tags=["Pokemon"])
