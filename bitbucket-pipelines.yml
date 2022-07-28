@@ -1,0 +1,18 @@
+image: python:3.10
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Test
+          caches:
+            - pip
+          script:
+            - pip install pipenv
+            - pipenv install -d
+            - pipenv run pytest --cov
+      - step:
+          name: Lint code
+          script:
+            # Enforce style consistency across projects
+            - pip install black
+            - black .
