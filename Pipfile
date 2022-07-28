@@ -5,13 +5,14 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
-uvicorn = {extras = ["standard"], version = "*"}
-pydantic = {extras = ["dotenv"], version = "*"}
+uvicorn = { extras = ["standard"], version = "*" }
+pydantic = { extras = ["dotenv"], version = "*" }
 aiohttp = "*"
 pytest = "*"
 pytest-cov = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.10"
