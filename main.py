@@ -15,5 +15,5 @@ app = FastAPI(
 
 API_V1 = "/api/v1"
 
-app.include_router(health.router, prefix=API_V1, tags=["Pokemon"])
+app.include_router(health.router, prefix=API_V1, tags=["Health"])
 app.include_router(pokemon.router, prefix=API_V1, tags=["Pokemon"])
