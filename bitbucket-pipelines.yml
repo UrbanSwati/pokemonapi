@@ -29,7 +29,7 @@ pipelines:
                 AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
                 AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
-                IMAGE_NAME: $BITBUCKET_REPO_SLUG
+                IMAGE_NAME: "pokemon"
                 TAGS: $BITBUCKET_COMMIT
           services:
             - docker
