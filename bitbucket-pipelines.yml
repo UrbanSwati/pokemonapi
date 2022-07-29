@@ -37,7 +37,7 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
                 AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
                 IMAGE_NAME: "pokemon"
-                TAGS: $BITBUCKET_COMMIT
+                TAGS: api-$BITBUCKET_COMMIT
           services:
             - docker
           caches:
