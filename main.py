@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 
 from app.router import pokemon, health
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI(
     title="Pokemon API",
@@ -11,6 +13,13 @@ app = FastAPI(
         "name": "Apache 2.0",
         "url": "https://www.apache.org/licenses/LICENSE-2.0",
     },
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 API_V1 = "/api/v1"
