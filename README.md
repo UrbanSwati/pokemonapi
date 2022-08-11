@@ -1,5 +1,5 @@
 # Pokemon API
-[![Tests](https://github.com/UrbanSwati/pokemonapi/actions/workflows/python-app.yml/badge.svg)](https://github.com/UrbanSwati/pokemonapi/actions/workflows/python-app.yml)
+[![Python application](https://github.com/UrbanSwati/pokemonapi/actions/workflows/python-app.yml/badge.svg)](https://github.com/UrbanSwati/pokemonapi/actions/workflows/python-app.yml)
 
 
 Pokemon API that consumes the [https://pokeapi.co/api/v2](https://pokeapi.co/api/v2) API.
