@@ -4,7 +4,7 @@ Pokemon API that consumes the [https://pokeapi.co/api/v2](https://pokeapi.co/api
 
 API/Swagger docs link: [http://api-pokemon.urbanswati.co.za/docs](http://api-pokemon.urbanswati.co.za/docs)
 
-Frontend using the API hosted on S3: [http://urbanswati-pokemon-webapp.s3-website-eu-west-1.amazonaws.com/](http://urbanswati-pokemon-webapp.s3-website-eu-west-1.amazonaws.com/)
+Frontend using the API hosted on S3: [https://pokemon.urbanswati.co.za/](https://pokemon.urbanswati.co.za/)
 
 ## Getting Started
 
